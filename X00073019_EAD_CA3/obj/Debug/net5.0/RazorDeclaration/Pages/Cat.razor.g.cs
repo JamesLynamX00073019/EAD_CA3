@@ -91,7 +91,7 @@ using X00073019_EAD_CA3.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Cat.razor"
+#line 27 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Cat.razor"
        
     public class Kitty
     {
@@ -115,12 +115,15 @@ using X00073019_EAD_CA3.Shared;
 
 
 
+
     private async Task GetDataAsync()
     {
         try
         {
             string uri = "https://api.thecatapi.com/v1/images/search";
             data = await Http.GetJsonAsync<Root>(uri);
+
+            found = true;
 
         }
         catch (Exception e)
@@ -133,11 +136,21 @@ using X00073019_EAD_CA3.Shared;
         }
     }
 
+    protected override async Task OnInitializedAsync()
+    {
+        await GetDataAsync();
+    }
 
 
+    // public string thisShouldShowACat;
 
-
-
+    // private void showKitty()
+    // {
+    //     thisShouldShowACat = data.MyArray [0].url;
+    //    Console.WriteLine(thisShouldShowACat);
+    //
+    //     await OnInitializedAsync();
+    //   }
 
 
 

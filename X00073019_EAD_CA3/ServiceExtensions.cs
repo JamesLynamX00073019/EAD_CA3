@@ -28,7 +28,7 @@ namespace EADCA3
 
             var responseBytes = await response.Content.ReadAsByteArrayAsync();
 
-            var deserializedResponse = JsonSerializer.Deserialize<T>(responseBytes);
+            
             return JsonSerializer.Deserialize<T>(responseBytes, new JsonSerializerOptions { });
         }
     }

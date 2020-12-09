@@ -4,17 +4,21 @@
 
 @inject HttpClient Http
 
-@*@<button class="btn btn-primary" @onclick="">Click for Cat!</button>*@
+@*@<button class="btn btn-primary" @onclick="showKitty">Click for Cat!</button>*@
+<button class="btn btn-primary" @onclick="GetDataAsync">Click for Cat!</button>
+
+
 
 
 
 @if (data == null)
 {
-    <p><em>Loading...hmm</em></p> }
+   <p><em>Loading...</em></p> }
+
 else
 {
 
-    <img src="@data.MyArray[0].url" alt="Meow">
+    <img src="@data.MyArray[0].url" alt="Meow" >
 
 
 }
@@ -43,12 +47,17 @@ else
 
 
 
+
     private async Task GetDataAsync()
     {
         try
         {
             string uri = "https://api.thecatapi.com/v1/images/search";
             data = await Http.GetJsonAsync<Root>(uri);
+
+            found = true;
+            errormessage = String.Empty;
+
 
         }
         catch (Exception e)
@@ -61,11 +70,21 @@ else
         }
     }
 
+    protected override async Task OnInitializedAsync()
+    {
+        await GetDataAsync();
+    }
 
 
+    // public string thisShouldShowACat;
 
-
-
+    // private void showKitty()
+    // {
+    //     thisShouldShowACat = data.MyArray [0].url;
+    //    Console.WriteLine(thisShouldShowACat);
+    //
+    //     await OnInitializedAsync();
+    //   }
 
 
 
