@@ -1,0 +1,73 @@
+﻿@page "/cats"
+
+<h3>Cat</h3>
+
+@inject HttpClient Http
+
+@*@<button class="btn btn-primary" @onclick="">Click for Cat!</button>*@
+
+
+
+@if (data == null)
+{
+    <p><em>Loading...hmm</em></p> }
+else
+{
+
+    <img src="@data.MyArray[0].url" alt="Meow">
+
+
+}
+
+
+@code {
+    public class Kitty
+    {
+        public List<object> breeds { get; set; }
+        public string id { get; set; }
+        public string url { get; set; }
+        public int width { get; set; }
+        public int height { get; set; }
+    }
+
+    public class Root
+    {
+        public List<Kitty> MyArray { get; set; }
+    }
+
+    private Root data;
+    private Boolean found;
+    private int count = 0;
+    private string errormessage;
+
+
+
+
+    private async Task GetDataAsync()
+    {
+        try
+        {
+            string uri = "https://api.thecatapi.com/v1/images/search";
+            data = await Http.GetJsonAsync<Root>(uri);
+
+        }
+        catch (Exception e)
+        {
+
+            found = false;
+            errormessage = e.Message;
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
