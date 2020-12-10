@@ -91,7 +91,7 @@ using X00073019_EAD_CA3.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Cat.razor"
+#line 29 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Cat.razor"
        
     public class Kitty
     {
@@ -102,18 +102,21 @@ using X00073019_EAD_CA3.Shared;
         public int height { get; set; }
     }
 
+    // Deserialize to an Array
+    private List<Kitty> data;
+
     public class Root
     {
         public List<Kitty> MyArray { get; set; }
     }
 
-    private Root data;
+    // private Root data;
     private Boolean found;
-    private int count = 0;
     private string errormessage;
+    private string breed;
 
 
-
+    private string SearchTerm { get; set; } = "";
 
 
     private async Task GetDataAsync()
@@ -121,9 +124,13 @@ using X00073019_EAD_CA3.Shared;
         try
         {
             string uri = "https://api.thecatapi.com/v1/images/search";
-            data = await Http.GetJsonAsync<Root>(uri);
+
+            // Again, to an Array
+            data = await Http.GetJsonAsync<List<Kitty>>(uri);
 
             found = true;
+            errormessage = String.Empty;
+
 
         }
         catch (Exception e)

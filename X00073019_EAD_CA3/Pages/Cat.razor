@@ -18,8 +18,10 @@
 else
 {
 
-    <img src="@data.MyArray[0].url" alt="Meow" >
-
+    <img src="@data[0].url" alt="Meow" >
+    
+    // Template for search bar, not sure what to search for!
+    <input @bind-value="SearchTerm" @bind-value:event="oninput" />
 
 }
 
@@ -34,18 +36,21 @@ else
         public int height { get; set; }
     }
 
+    // Deserialize to an Array
+    private List<Kitty> data;
+
     public class Root
     {
         public List<Kitty> MyArray { get; set; }
     }
 
-    private Root data;
+    // private Root data;
     private Boolean found;
-    private int count = 0;
     private string errormessage;
+    private string breed;
 
 
-
+    private string SearchTerm { get; set; } = "";
 
 
     private async Task GetDataAsync()
@@ -53,7 +58,9 @@ else
         try
         {
             string uri = "https://api.thecatapi.com/v1/images/search";
-            data = await Http.GetJsonAsync<Root>(uri);
+
+            // Again, to an Array
+            data = await Http.GetJsonAsync<List<Kitty>>(uri);
 
             found = true;
             errormessage = String.Empty;
