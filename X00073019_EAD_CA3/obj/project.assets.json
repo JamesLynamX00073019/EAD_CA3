@@ -16,10 +16,10 @@
           "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.HttpClient/3.0.0-preview8.19405.7": {
+      "Microsoft.AspNetCore.Blazor.HttpClient/3.1.0-preview4.19579.2": {
         "type": "package",
         "dependencies": {
-          "System.Text.Json": "4.6.0-preview8.19405.3"
+          "System.Text.Json": "4.7.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll": {}
@@ -333,7 +333,7 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
-      "System.Text.Json/4.6.0-preview8.19405.3": {
+      "System.Text.Json/4.7.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
@@ -358,10 +358,10 @@
           "lib/net5.0/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.HttpClient/3.0.0-preview8.19405.7": {
+      "Microsoft.AspNetCore.Blazor.HttpClient/3.1.0-preview4.19579.2": {
         "type": "package",
         "dependencies": {
-          "System.Text.Json": "4.6.0-preview8.19405.3"
+          "System.Text.Json": "4.7.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll": {}
@@ -675,7 +675,7 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
-      "System.Text.Json/4.6.0-preview8.19405.3": {
+      "System.Text.Json/4.7.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
@@ -706,16 +706,17 @@
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.HttpClient/3.0.0-preview8.19405.7": {
-      "sha512": "B/wzq8/9ESaYSCu+5IxM53vKqBdmZn6UPsiDiRSmg43S4bCnG+wLP/U/UB2N2RQ7AeqGWVU0oVtLQbbCPjz5Eg==",
+    "Microsoft.AspNetCore.Blazor.HttpClient/3.1.0-preview4.19579.2": {
+      "sha512": "+0jdcwNQAibSkiKxSJhzgezVsN3z3CP8zcYbVjIgNELIxdQDRMnossFw+s5L/tlOBA+HQCMT7WLBuaFOStZuRA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.httpclient/3.0.0-preview8.19405.7",
+      "path": "microsoft.aspnetcore.blazor.httpclient/3.1.0-preview4.19579.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll",
-        "microsoft.aspnetcore.blazor.httpclient.3.0.0-preview8.19405.7.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.httpclient.3.1.0-preview4.19579.2.nupkg.sha512",
         "microsoft.aspnetcore.blazor.httpclient.nuspec"
       ]
     },
@@ -1247,10 +1248,10 @@
         "version.txt"
       ]
     },
-    "System.Text.Json/4.6.0-preview8.19405.3": {
-      "sha512": "0EBeDPblJQCQymtAuKSAEgAWJ95wSBasYNk65qdXm/8rMPpyrKVnLFQm3a3HfbEAKslfGHbYY38a4C9snC5d/A==",
+    "System.Text.Json/4.7.0": {
+      "sha512": "IPq/x/d5nAcnD3vIyM3AbPOaTgcqrh0AqPSx7U53UFu3M6k1TH1u/eXc9/h4jm/3mpP1WRUpevlPY4PACd7AWw==",
       "type": "package",
-      "path": "system.text.json/4.6.0-preview8.19405.3",
+      "path": "system.text.json/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1262,7 +1263,7 @@
         "lib/netcoreapp3.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.6.0-preview8.19405.3.nupkg.sha512",
+        "system.text.json.4.7.0.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1271,7 +1272,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Blazor.HttpClient >= 3.0.0-preview8.19405.7",
+      "Microsoft.AspNetCore.Blazor.HttpClient >= 3.1.0-preview4.19579.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.0",
       "Microsoft.Extensions.Http >= 5.0.0",
@@ -1318,9 +1319,8 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Blazor.HttpClient": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview8.19405.7, )"
+            "version": "[3.1.0-preview4.19579.2, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
@@ -1353,7 +1353,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.0, 5.0.0]"
+            "version": "[5.0.1, 5.0.1]"
           }
         ],
         "frameworkReferences": {
@@ -1361,7 +1361,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
