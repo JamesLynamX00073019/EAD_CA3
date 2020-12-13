@@ -1,0 +1,115 @@
+﻿@page "/categories"
+@inject HttpClient Http
+
+<h3>Cat Categories</h3>
+
+@if (data == null)
+{
+    <p><em>Loading...</em></p> }
+
+else
+{
+
+
+    <h4>@data[0].name ID: @data[0].id</h4>
+    <h4>@data[1].name ID: @data[1].id</h4>
+    <h4>@data[2].name ID: @data[2].id</h4>
+    <h4>@data[3].name ID: @data[3].id</h4>
+    <h4>@data[4].name ID: @data[4].id</h4>
+    <h4>@data[5].name ID: @data[5].id</h4>
+    <h4>@data[6].name ID: @data[6].id</h4>
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@code {
+
+    public class Kitty
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+    }
+
+    // Deserialize to an Array
+    private List<Kitty> data;
+    private List<Kitty> searchData;
+
+    public class Root
+    {
+        public List<Kitty> MyArray { get; set; }
+    }
+
+    // private Root data;
+    private Boolean found;
+    private string errormessage;
+
+    private string SearchTerm { get; set; } = "";
+
+
+    private async Task GetDataAsync()
+    {
+        try
+        {
+            string uri = "https://api.thecatapi.com/v1/categories";
+
+            // Again, to an Array
+            data = await Http.GetJsonAsync<List<Kitty>>(uri);
+
+            found = true;
+            errormessage = String.Empty;
+
+
+        }
+        catch (Exception e)
+        {
+
+            found = false;
+            errormessage = e.Message;
+
+
+        }
+    }
+
+
+    private string searchUrl;
+    private string catCategory;
+
+    private async Task Search()
+    {
+        try
+        {
+            searchUrl = string.Format("https://api.thecatapi.com/v1/images/search?category_ids=" + catCategory);
+            searchData = await Http.GetJsonAsync<List<Kitty>>(searchUrl);
+        }
+        catch (Exception e)
+        {
+
+            found = false;
+            errormessage = e.Message;
+
+
+        }
+    }
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetDataAsync();
+    }
+
+
+
+
+
+}

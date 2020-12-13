@@ -1,99 +1,70 @@
 ﻿@page "/cats"
 
-<h3>Cat</h3>
+
+
 
 @inject HttpClient Http
-
 @*@<button class="btn btn-primary" @onclick="showKitty">Click for Cat!</button>*@
-<button class="btn btn-primary" @onclick="GetDataAsync">Click for Cat!</button>
-
-
 
 
 
 @if (data == null)
 {
-   <p><em>Loading...</em></p> }
+    <p><em>Loading...</em></p> }
 
 else
 {
 
-    <img src="@data[0].url" alt="Meow" >
+
+    <h3>Cat</h3> <div><button class="btn btn-primary" @onclick="GetDataAsync">Click for a random Cat!</button></div>
+    <img src="@data[0].url" alt="Meow" width="800" height="600" style=" margin:2%">
+
+
     
-    // Template for search bar, not sure what to search for!
-    <input @bind-value="SearchTerm" @bind-value:event="oninput" />
+    <div id="CategoryBtn">
+        <button class="btn btn-primary" @onclick="Search">Search by Category!</button>
+        <input placeholder="Cat Category (1-15)" pattern="[0-9]+" @bind=" catCategory" />
+        <p>Current Category: @catCategory</p>
+
+        @if (catCategory < 0 || catCategory > 15)
+        {
+            <p>Error! You must enter a value between 0 and 15!</p>
+        }
+
+    </div>
+
+    
+    <div style=" text-align:right">
+
+        <h2>Cat Categories:</h2>
+
+        <b>Cats in Hats: </b>1
+
+        <b>Cats in Space: </b>2
+
+        <b>Cats in GIFs: </b>2
+
+        <b>Cats in Sunglasses: </b>4
+
+        <b>Cats in Boxes: </b>5
+
+        <b>Cats in Ties: </b>7
+
+        <b>Cats in Sinks: </b>14
+
+        <b>Cats in Clothes: </b>15
+
+        <b>Random Cat: </b>0
+
+
+    </div>
+
+
 
 }
 
 
 @code {
-    public class Kitty
-    {
-        public List<object> breeds { get; set; }
-        public string id { get; set; }
-        public string url { get; set; }
-        public int width { get; set; }
-        public int height { get; set; }
-    }
-
-    // Deserialize to an Array
-    private List<Kitty> data;
-
-    public class Root
-    {
-        public List<Kitty> MyArray { get; set; }
-    }
-
-    // private Root data;
-    private Boolean found;
-    private string errormessage;
-    private string breed;
-
-
-    private string SearchTerm { get; set; } = "";
-
-
-    private async Task GetDataAsync()
-    {
-        try
-        {
-            string uri = "https://api.thecatapi.com/v1/images/search";
-
-            // Again, to an Array
-            data = await Http.GetJsonAsync<List<Kitty>>(uri);
-
-            found = true;
-            errormessage = String.Empty;
-
-
-        }
-        catch (Exception e)
-        {
-
-            found = false;
-            errormessage = e.Message;
-
-
-        }
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        await GetDataAsync();
-    }
-
-
-    // public string thisShouldShowACat;
-
-    // private void showKitty()
-    // {
-    //     thisShouldShowACat = data.MyArray [0].url;
-    //    Console.WriteLine(thisShouldShowACat);
-    //
-    //     await OnInitializedAsync();
-    //   }
-
-
 
 
 }

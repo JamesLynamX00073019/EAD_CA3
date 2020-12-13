@@ -82,8 +82,8 @@ using X00073019_EAD_CA3.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/categories")]
+    public partial class Categories : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,18 +91,93 @@ using X00073019_EAD_CA3.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Counter.razor"
+#line 33 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Pages\Categories.razor"
        
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    public class Kitty
     {
-        currentCount++;
+        public int id { get; set; }
+        public string name { get; set; }
     }
+
+    // Deserialize to an Array
+    private List<Kitty> data;
+    private List<Kitty> searchData;
+
+    public class Root
+    {
+        public List<Kitty> MyArray { get; set; }
+    }
+
+    // private Root data;
+    private Boolean found;
+    private string errormessage;
+
+    private string SearchTerm { get; set; } = "";
+
+
+    private async Task GetDataAsync()
+    {
+        try
+        {
+            string uri = "https://api.thecatapi.com/v1/categories";
+
+            // Again, to an Array
+            data = await Http.GetJsonAsync<List<Kitty>>(uri);
+
+            found = true;
+            errormessage = String.Empty;
+
+
+        }
+        catch (Exception e)
+        {
+
+            found = false;
+            errormessage = e.Message;
+
+
+        }
+    }
+
+
+    private string searchUrl;
+    private string catCategory;
+
+    private async Task Search()
+    {
+        try
+        {
+            searchUrl = string.Format("https://api.thecatapi.com/v1/images/search?category_ids=" + catCategory);
+            searchData = await Http.GetJsonAsync<List<Kitty>>(searchUrl);
+        }
+        catch (Exception e)
+        {
+
+            found = false;
+            errormessage = e.Message;
+
+
+        }
+    }
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetDataAsync();
+    }
+
+
+
+
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -8,6 +8,11 @@
     flex: 1;
 }
 
+img[b-72vaktrntc]{
+    margin: 20%;
+}
+
+
 .sidebar[b-72vaktrntc] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }

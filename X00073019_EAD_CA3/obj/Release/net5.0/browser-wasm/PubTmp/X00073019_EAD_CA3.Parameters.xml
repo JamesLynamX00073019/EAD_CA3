@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="X00073019-EADCA3-Cats" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="EAD-CA3-X00073019" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\drach\\Documents\\Year\ 4\ College\\EAD\\CA3\\EAD_CA3_JamesLynam_X00073019\\X00073019_EAD_CA3\\obj\\Release\\net5\.0\\browser-wasm\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
