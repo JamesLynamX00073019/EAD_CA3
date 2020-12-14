@@ -57,16 +57,18 @@
             <div style="clear:both; margin-top:1em">
 
                 <p>You can also search by category numbers!</p>
-                <p>Enter a number between 1-15!</p>
+                <p>Enter a cat ID!</p>
+                <p>1, 2, 4, 5, 7, 14, 15</p>
 
-                <input placeholder="Cat Category (1-15)" pattern="[0-9]+" @bind=" catCategory" />
+                <input placeholder="Cat Category" pattern="[0-9]+" @bind=" catCategory" />
                 <p>Current Category: @catCategory</p>
 
                 <!--Validation-->
-                @if (catCategory < 0 || catCategory > 15)
+                @if (catCategory == 3 || catCategory == 6 || catCategory == 8 || catCategory == 9 || catCategory == 10 || catCategory == 11 || catCategory == 12 || catCategory == 13)
                 {
-                    <p>Error! You must enter a value between 0 and 15!</p>
+                    <p>Error! Please enter a valid ID.</p>
                 }
+
 
             </div>
 

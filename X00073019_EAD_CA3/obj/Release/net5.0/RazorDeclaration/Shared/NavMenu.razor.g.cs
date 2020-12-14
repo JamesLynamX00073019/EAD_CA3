@@ -90,7 +90,7 @@ using X00073019_EAD_CA3.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Shared\NavMenu.razor"
+#line 41 "C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

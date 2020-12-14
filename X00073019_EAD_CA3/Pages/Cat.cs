@@ -79,9 +79,9 @@ namespace X00073019_EAD_CA3.Pages
                 try
                 {
                     // Validation
-                    if (catCategory < 1 || catCategory > 15)
+                    if (catCategory == 3 || catCategory == 6 || catCategory == 8 || catCategory == 9 || catCategory == 10 || catCategory == 11 || catCategory == 12 || catCategory == 13)
                     {
-                        Console.WriteLine("Error. Category must be between 1 and 15");
+                        Console.WriteLine("Error. Please enter a valid ID.");
                     }
                     else
                     {
