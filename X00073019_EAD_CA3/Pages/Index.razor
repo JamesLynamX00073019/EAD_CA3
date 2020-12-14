@@ -1,11 +1,48 @@
 ﻿@page "/"
 
 
-<h1>James Lynam - EAD CA3 - X00073019</h1>
+<!--James Lynam - EAD CA3 - X00073019 - Index.razor-->
 
-<div style=" margin-bottom:2%"> <h2>Hello, welcome to my Cat App!</h2>   </div>
+    <div class="title">
+        <h1>James Lynam - EAD CA3 - X00073019</h1>
+    </div>
 
 
-This application is designed to show the user images of cats in a number of different ways!
+    <div style=" margin-bottom:2%; margin-top:2%;"> <h2>Hello, welcome to my Cat App!</h2>   </div>
 
-<input type="button" onclick="location.href='cats';" value="Let's get started..." />
+    <div>
+        <p>This application is designed to show the user images of cats in a number of different ways!</p>
+    </div>
+
+    <!--Button link to Cat.razor-->
+    <div>
+        <input type="button" onclick="location.href='cats';" value="Let's get started..." />
+    </div>
+
+
+
+    <html>
+    <body>
+    </body>
+    <head>
+        <!--Styling-->
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            .title {
+                background-color: antiquewhite;
+                width: 100%;
+                padding-bottom: 16px;
+                padding-top: 16px;
+                border-radius: 25px;
+                border: 2px solid black;
+            }
+
+            body {
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+</html>

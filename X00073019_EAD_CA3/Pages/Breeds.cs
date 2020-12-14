@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Components; // Allows use of ComponentBase
+using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Components;
 using System.Threading.Tasks;
+
+// James Lynam - EAD CA3 - X00073019 - Index.cs
 
 namespace X00073019_EAD_CA3.Pages
 {
+    // Need to declare partial, conflicts otherwise
+    // ComponentBase allows us to use code in corresponding razor page
     public partial class Breeds : ComponentBase
     {
+        // Class data converted from JSON
         public class Image
         {
             public int height { get; set; }
@@ -68,6 +73,28 @@ namespace X00073019_EAD_CA3.Pages
         private Boolean found;
         private string errormessage;
 
+        // Used in filter bar
+        private string Filter { get; set; }
+
+        // Boolean method to display whether or not user enters letters in either upper or lowercase
+        public bool IsVisible(Kitty kitty)
+        {
+            if (string.IsNullOrEmpty(Filter))
+                return true;
+
+            if (kitty.name.Contains(Filter, StringComparison.OrdinalIgnoreCase))
+                return true;
+
+            if (kitty.name.ToString().StartsWith(Filter))
+                return true;
+
+            return false;
+        }
+
+
+
+
+
         public class Root
         {
             public List<Kitty> MyArray { get; set; }
@@ -101,6 +128,9 @@ namespace X00073019_EAD_CA3.Pages
         {
             await GetDataAsync();
         }
+
+
+
 
     }
 

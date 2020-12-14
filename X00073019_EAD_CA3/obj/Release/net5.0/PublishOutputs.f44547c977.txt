@@ -12,7 +12,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\css\open-iconic\README.md
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\index.html
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\sample-data\weather.json
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.wasm
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\icudt.dat
@@ -49,7 +48,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Console.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Linq.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Memory.dll
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.Json.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Primitives.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.ObjectModel.dll
@@ -77,7 +75,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\css\open-iconic\README.md.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\favicon.ico.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\index.html.br
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\sample-data\weather.json.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.timezones.blat.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.wasm.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\icudt.dat.br
@@ -114,7 +111,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Console.dll.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Linq.dll.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Memory.dll.br
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.Json.dll.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.dll.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Primitives.dll.br
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.ObjectModel.dll.br
@@ -141,7 +137,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\css\open-iconic\README.md.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\favicon.ico.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\index.html.gz
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\sample-data\weather.json.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.timezones.blat.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\dotnet.wasm.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\icudt.dat.gz
@@ -178,7 +173,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Console.dll.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Linq.dll.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Memory.dll.gz
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.Json.dll.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Http.dll.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.Net.Primitives.dll.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\browser-wasm\PubTmp\Out\wwwroot\_framework\System.ObjectModel.dll.gz

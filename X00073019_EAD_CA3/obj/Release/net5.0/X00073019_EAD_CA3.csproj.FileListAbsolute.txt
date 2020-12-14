@@ -407,8 +407,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\X00073019_EAD_CA3.RazorComponent.input.cache
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\App.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\Cat.razor.g.cs
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\_Imports.razor.g.cs
@@ -421,8 +419,6 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\X00073019_EAD_CA3.RazorCoreGenerate.cache
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\App.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\Cat.razor.g.cs
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\_Imports.razor.g.cs
@@ -638,3 +634,7 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\build-gz\iPBKJMPw.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\build-gz\7J1FORCp.gz
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\build-gz\RnYjtcsE.gz
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\Breeds.razor.g.cs
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\RazorDeclaration\Pages\Categories.razor.g.cs
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\Breeds.razor.g.cs
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Release\net5.0\Razor\Pages\Categories.razor.g.cs

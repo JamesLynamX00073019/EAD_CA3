@@ -1,16 +1,27 @@
 ﻿@page "/categories"
 @inject HttpClient Http
 
-<h3>Cat Categories</h3>
+<!--James Lynam - EAD CA3 - X00073019 - Categories.razor-->
+<!--All C# code is present in Categories.cs-->
+
+<div class="catCategories">
+    <h3>Cat Categories</h3>
+</div>
+
+<div class="categoryDescription">
+    <p>This page is simply used as a reference for each cat picture category.</p>
+    <p>It pulls the information from the API.</p>
+</div>
+
 
 @if (data == null)
 {
-    <p><em>Loading...</em></p> }
+    <p><em>Loading...here kitty...</em></p> }
 
 else
 {
 
-
+    <!--Just displaying some more data from API - category IDs-->
     <h4>@data[0].name ID: @data[0].id</h4>
     <h4>@data[1].name ID: @data[1].id</h4>
     <h4>@data[2].name ID: @data[2].id</h4>
@@ -18,98 +29,35 @@ else
     <h4>@data[4].name ID: @data[4].id</h4>
     <h4>@data[5].name ID: @data[5].id</h4>
     <h4>@data[6].name ID: @data[6].id</h4>
-
-
-
-
-
-
-
 }
 
 
-
-
-
-@code {
-
-    public class Kitty
-    {
-        public int id { get; set; }
-        public string name { get; set; }
-    }
-
-    // Deserialize to an Array
-    private List<Kitty> data;
-    private List<Kitty> searchData;
-
-    public class Root
-    {
-        public List<Kitty> MyArray { get; set; }
-    }
-
-    // private Root data;
-    private Boolean found;
-    private string errormessage;
-
-    private string SearchTerm { get; set; } = "";
-
-
-    private async Task GetDataAsync()
-    {
-        try
-        {
-            string uri = "https://api.thecatapi.com/v1/categories";
-
-            // Again, to an Array
-            data = await Http.GetJsonAsync<List<Kitty>>(uri);
-
-            found = true;
-            errormessage = String.Empty;
-
-
+<html>
+<body>
+</body>
+<head>
+    <!--Styling-->
+    <style>
+        h3 {
+            text-align: center;
         }
-        catch (Exception e)
-        {
 
-            found = false;
-            errormessage = e.Message;
-
-
+        .catCategories {
+            background-color: antiquewhite;
+            width: 100%;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            border-radius: 25px;
+            border: 2px solid black;
         }
-    }
 
-
-    private string searchUrl;
-    private string catCategory;
-
-    private async Task Search()
-    {
-        try
-        {
-            searchUrl = string.Format("https://api.thecatapi.com/v1/images/search?category_ids=" + catCategory);
-            searchData = await Http.GetJsonAsync<List<Kitty>>(searchUrl);
+        body {
+            background-color: lightgrey;
         }
-        catch (Exception e)
-        {
 
-            found = false;
-            errormessage = e.Message;
-
-
+        .categoryDescription {
+            margin-top: 1em;
         }
-    }
-
-
-
-
-    protected override async Task OnInitializedAsync()
-    {
-        await GetDataAsync();
-    }
-
-
-
-
-
-}
+    </style>
+</head>
+</html>

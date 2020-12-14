@@ -1,26 +1,91 @@
 ﻿@page "/breeds"
 @inject HttpClient Http
+    
+<!--James Lynam - EAD CA3 - X00073019 - Breeds.razor-->
+<!--All C# code is present in Breeds.cs-->
 
-<h3>Cat Breeds</h3>
-
-@* <button class="btn btn-primary" @onclick="GetDataAsync">Click to search for cats!</button>*@
-
-<button class="btn btn-primary" @onclick="GetDataAsync">Click for Cat data!</button>
-
-
-
-
-<div>
-    Name:
+<div class="catBreeds">
+    <h3>Cat Breeds</h3>
 </div>
 
+<div class="pageDescription">
+    <h4>Information about different cat breeds! Please use the filter below if you are looking for something in particular!</h4>
+</div>
 
+@if (data == null)
+{
+    <p><em>Loading...here kitty...</em></p> }
+
+else
+{
+
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Filter..."
+               @bind="Filter"
+               @bind:event="oninput">
+    </div>
+
+    <table class="table table-striped">
+        <thead class=" thead-light">
+            <tr>
+                <!--Table column names-->
+                <th scope="col">Cat Name:</th>
+                <th scope="col">Origin:</th>
+                <th scope="col">Lifespan:</th>
+                <th scope="col">Intelligence:</th>
+                <th scope="col">Description:</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!--Creating variable called row from data read in from API-->
+            @foreach (var row in data)
+            {
+                <!--Applying filter bar to table-->
+                if (!IsVisible(row))
+                    continue;
+
+                <tr>
+                    <!--Displaying the most interesting attributes from the API about the cats-->
+                    <b><td>@row.name</td></b>
+                    <td>@row.origin</td>
+                    <td>@row.life_span</td>
+                    <td>@row.intelligence</td>
+                    <td>@row.description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
 
-@code {
-    
 
+<html>
+<body>
+</body>
+<head>
+    <!--Styling-->
+    <style>
+        h3 {
+            text-align: center;
+        }
 
+        .catBreeds {
+            background-color: antiquewhite;
+            width: 100%;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            border-radius: 25px;
+            border: 2px solid black;
+        }
 
-}
+        body {
+            background-color: lightgrey;
+        }
+
+        .pageDescription {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+</html>

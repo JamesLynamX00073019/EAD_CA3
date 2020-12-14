@@ -637,3 +637,4 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Debug\net5.0\X00073019_EAD_CA3.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Debug\net5.0\ref\X00073019_EAD_CA3.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Debug\net5.0\X00073019_EAD_CA3.pdb
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\X00073019_EAD_CA3\obj\Debug\net5.0\X00073019_EAD_CA3.csprojAssemblyReference.cache

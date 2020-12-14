@@ -1,70 +1,137 @@
 ﻿@page "/cats"
-
-
-
-
 @inject HttpClient Http
-@*@<button class="btn btn-primary" @onclick="showKitty">Click for Cat!</button>*@
+<!--James Lynam - EAD CA3 - X00073019 - Cat.razor-->
+<!--All C# code is present in Cat.cs-->
+
+<html>
+<body>
+    @if (data == null)
+    {
+        <p><em>Loading...here kitty...</em></p> }
+
+    else
+    {
+
+        <div class="catText">
+            <h3>Cat Pictures!</h3>
+        </div>
+
+
+        <div class="pageDescription">
+            <p>The purpose of this page is to display cat pictures based on user choice.</p>
+            <p>The user can hit the big red button for a random cat picture.</p>
+            <p>We can also use the category buttons on the right, or type in a category number below.</p>
+        </div>
+
+        <!--Calling async method-->
+        <div><button class="bigButton" @onclick="GetDataAsync">Click for a random Cat!</button></div>
+
+
+        <div style="float:left">
+            <!--Extracting first entry in list to display random image, had to enforce a size as some were huge-->
+            <img src="@data[0].url" alt="Meow" width="800" height="600" style=" margin:0.3em;">
+        </div>
 
 
 
-@if (data == null)
-{
-    <p><em>Loading...</em></p> }
+        <div style="width:20%;display:inline-block; margin-left:5em; margin-top:3em">
 
-else
-{
+            <h2>Cat Categories:</h2>
+
+            <!--Calling individual sister methods from Cat.cs-->
+            <button class="categoryButton" @onclick="CatsInHats">Cats in Hats</button>
+
+            <button class="categoryButton" @onclick="CatsInSpace">Cats in Space</button>
+
+            <button class="categoryButton" @onclick="CatsInSunglasses">Cats in Sunglasses</button>
+
+            <button class="categoryButton" @onclick="CatsInBoxes">Cats in Boxes</button>
+
+            <button class="categoryButton" @onclick="CatsInTies">Cats in Ties</button>
+
+            <button class="categoryButton" @onclick="CatsInSinks">Cats in Sinks</button>
+
+            <button class="categoryButton" @onclick="CatsInClothes">Cats in Clothes</button>
 
 
-    <h3>Cat</h3> <div><button class="btn btn-primary" @onclick="GetDataAsync">Click for a random Cat!</button></div>
-    <img src="@data[0].url" alt="Meow" width="800" height="600" style=" margin:2%">
+            <div style="clear:both; margin-top:1em">
 
+                <p>You can also search by category numbers!</p>
+                <p>Enter a number between 1-15!</p>
 
-    
-    <div id="CategoryBtn">
-        <button class="btn btn-primary" @onclick="Search">Search by Category!</button>
-        <input placeholder="Cat Category (1-15)" pattern="[0-9]+" @bind=" catCategory" />
-        <p>Current Category: @catCategory</p>
+                <input placeholder="Cat Category (1-15)" pattern="[0-9]+" @bind=" catCategory" />
+                <p>Current Category: @catCategory</p>
 
-        @if (catCategory < 0 || catCategory > 15)
-        {
-            <p>Error! You must enter a value between 0 and 15!</p>
+                <!--Validation-->
+                @if (catCategory < 0 || catCategory > 15)
+                {
+                    <p>Error! You must enter a value between 0 and 15!</p>
+                }
+
+            </div>
+
+            <div class="searchButton">
+                <button @onclick="Search">Search by Category!</button>
+            </div>
+
+        </div>
+    }
+
+</body>
+
+<head>
+    <!--Styling-->
+    <style>
+        .bigButton {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: darkred;
+            border: none;
+            border-radius: 50px;
+            margin-bottom: 1em;
         }
 
-    </div>
+        .categoryButton {
+            background-color: #008CBA;
+            border-radius: 25px;
+            margin-bottom: 5px;
+            color: #fff;
+            border-color: #1861ac;
+            width: 10em;
+        }
 
-    
-    <div style=" text-align:right">
+        body {
+            background-color: lightgrey;
+        }
 
-        <h2>Cat Categories:</h2>
+        .catText {
+            background-color: antiquewhite;
+            width: 100%;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            border-radius: 25px;
+            border: 2px solid black;
+        }
 
-        <b>Cats in Hats: </b>1
+        h3 {
+            text-align: center;
+        }
 
-        <b>Cats in Space: </b>2
+        .pageDescription {
+            margin-top: 1em;
+        }
 
-        <b>Cats in GIFs: </b>2
-
-        <b>Cats in Sunglasses: </b>4
-
-        <b>Cats in Boxes: </b>5
-
-        <b>Cats in Ties: </b>7
-
-        <b>Cats in Sinks: </b>14
-
-        <b>Cats in Clothes: </b>15
-
-        <b>Random Cat: </b>0
-
-
-    </div>
-
-
-
-}
+        img {
+            border: 2px solid black;
+        }
+    </style>
+</head>
 
 
-@code {
-
-
-}
+</html>
