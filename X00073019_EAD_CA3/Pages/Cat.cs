@@ -79,7 +79,9 @@ namespace X00073019_EAD_CA3.Pages
                 try
                 {
                     // Validation
-                    if (catCategory == 3 || catCategory == 6 || catCategory == 8 || catCategory == 9 || catCategory == 10 || catCategory == 11 || catCategory == 12 || catCategory == 13)
+                    if (catCategory <= 0 || catCategory == 3 || catCategory == 6
+                     || catCategory == 8 || catCategory == 9 || catCategory == 10 
+                     || catCategory == 11 || catCategory == 12 || catCategory == 13 || catCategory > 15 )
                     {
                         Console.WriteLine("Error. Please enter a valid ID.");
                     }

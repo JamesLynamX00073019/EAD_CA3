@@ -123,3 +123,4 @@ C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\Cat
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\CatUnitTest\obj\Debug\netcoreapp5.0\ref\CatUnitTest.dll
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\CatUnitTest\obj\Debug\netcoreapp5.0\CatUnitTest.pdb
 C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\CatUnitTest\obj\Debug\netcoreapp5.0\CatUnitTest.genruntimeconfig.cache
+C:\Users\drach\Documents\Year 4 College\EAD\CA3\EAD_CA3_JamesLynam_X00073019\CatUnitTest\bin\Debug\netcoreapp5.0\X00073019_EAD_CA3.StaticWebAssets.xml
